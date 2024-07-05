@@ -7,11 +7,6 @@ document.addEventListener("DOMContentLoaded", () => {
         document.querySelector("[ data-testid='currentTimeUTC']").textContent = utcTime;
     }
 
-    function updateDay() {
-        const now = new Date();
-        const utcDate = now.toISOString().split('T')[0]; // Extracts the date part of the ISO string (MM-DD-YYYY)
-        document.querySelector("[data-testid='CurrentUTCdate']").textContent = utcDate;
-    }
     // Function to update the current day of the week
     function updateDay() {
         const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
